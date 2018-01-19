@@ -1,3 +1,4 @@
+var id=1
 function Student(firstName,lastName,grade) {
     this.id= id++;
     this.firstName = firstName;
@@ -19,10 +20,11 @@ function Teacher(firstName,lastName,subject) {
      */
 }
 
-function Section(name,count) {
+function Section(name,count, maxSize,currentSize) {
     this.name = name;
     this.count = count;
-
+    // this.mazSize= maxSize;
+    // this.currentSize=currentSize;
     /* Needs to be implemented
 
     this.students = [];

@@ -20,5 +20,5 @@ allSections.push(new Section("US History",30));
 allSections.push(new Section("CS",32));
 allSections.push(new Section("English",30));
 
-var allItems = [allStudents,allTeachers,allSections];
+var totalItems = [allStudents,allTeachers,allSections];
 
