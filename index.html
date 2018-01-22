@@ -10,13 +10,13 @@
 </head>
 <body>
 <h1> Objects in School</h1>
-    <select id="List">
+    <select id="List" onchange="determineList(this.value)">
         <option value="0">Students</option>
         <option value="1">Teachers</option>
         <option value="2">Sections</option>
     </select>
 
-    <button id="listBtn" onclick="listItems()">List Items</button>
+
 
     <br><br>
 
