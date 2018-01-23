@@ -20,26 +20,26 @@ function Teacher(firstName,lastName,subject) {
      */
 }
 
-function Section(name,count, maxSize,currentSize) {
+function Section(name,currentSize) {
     this.name = name;
-    this.count = count;
-    // this.mazSize= maxSize;
-    // this.currentSize=currentSize;
-    /* Needs to be implemented
+    // this.count = count;
+    // // this.mazSize= maxSize;
+    this.currentSize=currentSize;
+    // /* Needs to be implemented
 
-    this.students = [];
-    this.teacher;
-
-    this.addTeacher = function(teacher) {
-        this.teacher = teacher;
-    }
-
-    this.addStudent = function(student) {
-        this.students.push(student);
-    }
-
-    this.removeStudent = function(student) {
-        //remove student
-    }
-    */
+    // this.students = [];
+    // this.teacher;
+    //
+    // this.addTeacher = function(teacher) {
+    //     this.teacher = teacher;
+    // }
+    //
+    // this.addStudent = function(student) {
+    //     this.students.push(student);
+    // }
+    //
+    // this.removeStudent = function(student) {
+    //     //remove student
+    // }
+    // */
 }
