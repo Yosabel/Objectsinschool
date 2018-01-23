@@ -57,7 +57,7 @@ function buildSelection(){
     var html="";
     for(var i=0; allStudents.length;i++0{
 
-        html+="<option value=" + allStudents[i].id
+        html+="<option value= ' " + allStudents[i].id + " ' >" + allStudents[i].firstName + " " + allStudents[i].lastName + "</option>"
     }
 
 }
