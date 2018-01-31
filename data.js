@@ -22,3 +22,4 @@ allSections.push(new Section("English",30));
 
 var totalItems = [allStudents,allTeachers,allSections];
 
+console.log(totalItems);

@@ -8,7 +8,7 @@
     <script src="actions.js"></script>
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body onload="setUp()">
 <h1> Objects in School</h1>
     <select id="List" onchange="determineList(this.value)">
         <option value="0">Select Item</option>
@@ -69,7 +69,7 @@
 
     <br><br>
 
-    <div id="confirm"></div>
+    <div id="added"></div>
 
 </body>
 </html>

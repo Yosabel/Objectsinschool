@@ -3,6 +3,7 @@ h1{
 
 }
 body{
+    text-align: center;
     color: steelblue;
     background-color: lightsteelblue;
     font-family: "Courier New";
@@ -10,4 +11,12 @@ body{
 
 input{
     font-family: "Courier New";
+}
+table{
+    width: 100%;
+}
+
+#OutputList {
+    width: 40%;
+    margin:auto;
 }
