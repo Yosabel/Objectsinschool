@@ -87,6 +87,7 @@ var lastName=document.getElementById("studentlast").value;
 var grade=document.getElementById("studentgrade").value;
 allStudents.push(new Student(firstName,lastName,grade));
 document.getElementById("added").innerHTML= firstName +" has been added";
+    clear();
 }
 
 function addTeacher(){
@@ -95,6 +96,7 @@ function addTeacher(){
     var subject=document.getElementById("teachersubject").value;
     allTeachers.push(new Student(firstName,lastName,subject));
     document.getElementById("added").innerHTML= firstName +" has been added";
+    clear();
 }
 
 function addSection(){
@@ -102,5 +104,19 @@ function addSection(){
     var count=document.getElementById("sectioncount").value;
     allSections.push(new Section(name,count));
     document.getElementById("added").innerHTML= name +" has been added";
-
+clear();
 }
+
+function clear(){
+        var input = document.getElementsByTagName("input");
+        for (var i=0; i<input.length; i++) {
+            if (input[i].type == "text") {
+                input[i].value = "";
+            }
+        }
+    }
+
+function removeItems(){
+
+
+    }
