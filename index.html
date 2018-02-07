@@ -32,18 +32,22 @@
         <option value="0">Select Student</option>
     </select>
     <select id="sectionList">
-        <option value="0">Select Section</option>
+    <option value="0">Select Section</option>
     </select>
-    <select id="teacherList">
-        <option value="0">Select Teacher</option>
-    </select>
-
     <button id="addBtn" onclick="addItems()">Add Selection</button>
-
+    <button id="removeBtn" onclick="removeItems()">Remove Selection</button>
+<br>
+    <select id="teacherList"><option value="0">Select Teacher</option>
+    </select>
+    <select id="Listsection">
+    <option value="0">Select Section</option>
+    </select>
+    <button id="Btnadd" onclick="addItems()">Add Selection</button>
+    <button id="Btnremove" onclick="removeItems()">Remove Selection</button>
     <br><br>
-
+    <br>
     <hr>
-
+    <br>
     <br>
 
     <input id="studentfirst" placeholder="First Name">
@@ -51,6 +55,7 @@
     <input id="studentgrade" placeholder="Grade">
 
     <button id="addStudent" onclick="addStudent()">Add Student</button>
+    <!--<button id="removeStudent" onclick="removeStudent()">Remove Student</button>-->
 
     <br><br>
 
@@ -59,14 +64,14 @@
     <input id="teachersubject" placeholder="Subject">
 
     <button id="addTeacher" onclick="addTeacher()">Add Teacher</button>
-
+    <!--<button id="removeTeacher" onclick="removeTeacher()">Remove Teacher</button>-->
     <br><br>
 
     <input id="sectionname" placeholder="Section Name">
     <input id="sectioncount" placeholder="Section Count">
 
     <button id="addSection" onclick="addSection()">Add Section</button>
-
+    <!--<button id="removeSection" onclick="removeSection()">Remove Section</button>-->
     <br><br>
 
     <div id="added"></div>

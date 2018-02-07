@@ -56,19 +56,24 @@ function setUp(){
     buildSelection();
 }
 function buildSelection() {
-    var html = "";
-    var teach = "";
-    var sec = "";
+    document.getElementById("studentList").innerHTML="";
+    document.getElementById("sectionList").innerHTML="";
+    document.getElementById("teacherList").innerHTML="";
+    var html = "<option>Choose Student</option>";
+    var teach = "<option>Choose Teacher</option>";
+    var sec = "<option>Choose Section</option>";
+
     for (var i = 0; i < allSections.length; i++) {
        sec += "<option value='" + allSections[i].id + "'>" + allSections[i].name + "</option>"
     }
 
     document.getElementById("sectionList").innerHTML += sec;
+    document.getElementById("Listsection").innerHTML += sec;
 
     for (var i = 0; i < allStudents.length; i++) {
         html += "<option value='" + allStudents[i].id + "'>" + allStudents[i].firstName + " " + allStudents[i].lastName + "</option>"
-    }
 
+    }
     document.getElementById("studentList").innerHTML += html;
 
     for (var i = 0; i < allTeachers.length; i++) {
@@ -76,9 +81,15 @@ function buildSelection() {
     }
 
     document.getElementById("teacherList").innerHTML += teach;
+
 }
 
 function addItems(){
+
+}
+
+function removeItem(){
+
 
 }
 function addStudent(){
@@ -88,6 +99,7 @@ var grade=document.getElementById("studentgrade").value;
 allStudents.push(new Student(firstName,lastName,grade));
 document.getElementById("added").innerHTML= firstName +" has been added";
     clear();
+    buildSelection();
 }
 
 function addTeacher(){
@@ -97,6 +109,7 @@ function addTeacher(){
     allTeachers.push(new Student(firstName,lastName,subject));
     document.getElementById("added").innerHTML= firstName +" has been added";
     clear();
+    buildSelection();
 }
 
 function addSection(){
@@ -105,7 +118,9 @@ function addSection(){
     allSections.push(new Section(name,count));
     document.getElementById("added").innerHTML= name +" has been added";
 clear();
+buildSelection();
 }
+
 
 function clear(){
         var input = document.getElementsByTagName("input");
@@ -116,7 +131,7 @@ function clear(){
         }
     }
 
-function removeItems(){
+function addStudentToSection(){
 
 
-    }
+}

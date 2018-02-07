@@ -7,16 +7,32 @@ body{
     color: steelblue;
     background-color: lightsteelblue;
     font-family: "Courier New";
+
 }
 
 input{
     font-family: "Courier New";
+    font-size: large;
+
 }
 table{
     width: 100%;
+    font-size: large;
 }
 
+
 #OutputList {
+    font-size: large;
     width: 40%;
     margin:auto;
+}
+button{
+    font-family: "Courier New";
+    font-size: large;
+  
+}
+select{
+    font-family: "Courier New";
+    font-size: large;
+
 }
