@@ -26,6 +26,108 @@ table{
     width: 40%;
     margin:auto;
 }
+
+#addBtn{
+    background-color: white;
+    color:black;
+    border:none;
+}
+#addBtn:hover{
+    background-color: transparent;
+    color:white;
+    border:none;
+}
+#Btnremove{
+    background-color: white;
+    color:black;
+    border:none;
+}
+
+#Btnremove:hover{
+    background-color: transparent;
+    color:white;
+    border:none;
+}
+#addSection{
+    background-color: white;
+    color:black;
+    border:none;
+}
+#addSection:hover{
+    background-color: transparent;
+    color:white;
+    border:none;
+}
+#removeTeacher{
+    background-color: white;
+    color:black;
+    border:none;
+}
+#removeTeacher:hover{
+    background-color: transparent;
+    color:white;
+    border:none;
+}
+#addTeacher{
+    background-color: white;
+    color:black;
+    border:none;
+
+}
+#addTeacher:hover{
+    background-color: transparent;
+    color:white;
+    border:none;
+
+}
+#removeStudent{
+    background-color: white;
+    color:black;
+    border:none;
+}
+#removeStudent:hover{
+    background-color: transparent;
+    color:white;
+    border:none;
+
+}
+#addStudent{
+    background-color: white;
+    color:black;
+    border:none;
+
+}
+#addStudent:hover{
+    background-color: transparent;
+    color:white;
+    border:none;
+
+}
+#removeBtn{
+    background-color: white;
+    color:black;
+    border:none;
+
+}
+#removeBtn:hover{
+    background-color: transparent;
+    color:white;
+    border:none;
+
+}
+#Btnadd{
+    background-color: white;
+    color:black;
+    border:none;
+
+}
+#Btnadd:hover{
+    background-color: transparent;
+    color:white;
+    border:none;
+
+}
+
 button{
     font-family: "Courier New";
     font-size: large;

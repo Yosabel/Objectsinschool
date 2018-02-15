@@ -34,17 +34,20 @@
     <select id="sectionList">
     <option value="0">Select Section</option>
     </select>
-    <button id="addBtn" onclick="addItems()">Add Selection</button>
-    <button id="removeBtn" onclick="removeItems()">Remove Selection</button>
+    <button id="addBtn" onclick="addStudentToSection()"type="button" style="width:200px ; height:30px">Add Selection</button>
+    <button id="removeBtn" onclick="removeItems()"type="button" style="width:200px ; height:30px">Remove Selection</button>
 <br>
     <select id="teacherList"><option value="0">Select Teacher</option>
     </select>
+
     <select id="Listsection">
     <option value="0">Select Section</option>
     </select>
-    <button id="Btnadd" onclick="addItems()">Add Selection</button>
-    <button id="Btnremove" onclick="removeItems()">Remove Selection</button>
+    <button id="Btnadd" onclick="addTeacherToSection()"type="button" style="width:200px ; height:30px">Add Selection</button>
+    <button id="Btnremove" onclick="removeItems()"type="button" style="width:200px ; height:30px">Remove Selection</button>
     <br><br>
+<div id="addTeacherToSectiom" ></div>
+<div id="addStudentsToSectiom" ></div>
     <br>
     <hr>
     <br>
@@ -54,8 +57,8 @@
     <input id="studentlast" placeholder="Last Name">
     <input id="studentgrade" placeholder="Grade">
 
-    <button id="addStudent" onclick="addStudent()">Add Student</button>
-    <!--<button id="removeStudent" onclick="removeStudent()">Remove Student</button>-->
+    <button id="addStudent" onclick="addStudent()"type="button" style="width:200px ; height:30px">Add Student</button>
+    <button id="removeStudent" onclick="removeStudentFromSection()"type="button" style="width:200px ; height:30px">Remove Student</button>
 
     <br><br>
 
@@ -63,18 +66,19 @@
     <input id="teacherlast" placeholder="Last Name">
     <input id="teachersubject" placeholder="Subject">
 
-    <button id="addTeacher" onclick="addTeacher()">Add Teacher</button>
-    <!--<button id="removeTeacher" onclick="removeTeacher()">Remove Teacher</button>-->
+    <button id="addTeacher" onclick="addTeacher()"type="button" style="width:200px ; height:30px">Add Teacher</button>
+    <button id="removeTeacher" onclick="removeTeacherFromSection()"type="button" style="width:200px ; height:30px">Remove Teacher</button>
     <br><br>
 
     <input id="sectionname" placeholder="Section Name">
     <input id="sectioncount" placeholder="Section Count">
 
-    <button id="addSection" onclick="addSection()">Add Section</button>
-    <!--<button id="removeSection" onclick="removeSection()">Remove Section</button>-->
+    <button id="addSection" onclick="addSection()"type="button" style="width:200px ; height:30px">Add Section</button>
+
     <br><br>
 
     <div id="added"></div>
+
 
 </body>
 </html>

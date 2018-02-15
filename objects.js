@@ -14,6 +14,8 @@ function Teacher(firstName,lastName,subject) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.subject = subject;
+    this.id= id++;
+
 
     /* needs to be implemented
     this.sections = [];
@@ -21,10 +23,12 @@ function Teacher(firstName,lastName,subject) {
 }
 
 function Section(name,currentSize) {
-    this.name = name;
-    // this.count = count;
-    // // this.mazSize= maxSize;
-    this.currentSize=currentSize;
+    this.name=name;
+    this.id= id++;
+    this.currentSize = currentSize;
+    this.students = [];
+    this.teacher;
+
     // /* Needs to be implemented
 
     // this.students = [];
