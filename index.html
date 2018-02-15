@@ -35,7 +35,7 @@
     <option value="0">Select Section</option>
     </select>
     <button id="addBtn" onclick="addStudentToSection()"type="button" style="width:200px ; height:30px">Add Selection</button>
-    <button id="removeBtn" onclick="removeItems()"type="button" style="width:200px ; height:30px">Remove Selection</button>
+    <button id="removeBtn" onclick="removeStudentFromSection()"type="button" style="width:200px ; height:30px">Remove Selection</button>
 <br>
     <select id="teacherList"><option value="0">Select Teacher</option>
     </select>
@@ -44,10 +44,12 @@
     <option value="0">Select Section</option>
     </select>
     <button id="Btnadd" onclick="addTeacherToSection()"type="button" style="width:200px ; height:30px">Add Selection</button>
-    <button id="Btnremove" onclick="removeItems()"type="button" style="width:200px ; height:30px">Remove Selection</button>
+    <button id="Btnremove" onclick="removeTeacherFromSection()"type="button" style="width:200px ; height:30px">Remove Selection</button>
     <br><br>
-<div id="addTeacherToSectiom" ></div>
-<div id="addStudentsToSectiom" ></div>
+<div id="addTeacherToSection" ></div>
+<div id="addStudentsToSection" ></div>
+<div id="removeStudentsFromSection"></div>
+<div id="removeTeachersFromSection"></div>
     <br>
     <hr>
     <br>
@@ -58,7 +60,7 @@
     <input id="studentgrade" placeholder="Grade">
 
     <button id="addStudent" onclick="addStudent()"type="button" style="width:200px ; height:30px">Add Student</button>
-    <button id="removeStudent" onclick="removeStudentFromSection()"type="button" style="width:200px ; height:30px">Remove Student</button>
+    <!--<button id="removeStudent" onclick="removeStudentFromSection()"type="button" style="width:200px ; height:30px">Remove Student</button>-->
 
     <br><br>
 
@@ -67,7 +69,7 @@
     <input id="teachersubject" placeholder="Subject">
 
     <button id="addTeacher" onclick="addTeacher()"type="button" style="width:200px ; height:30px">Add Teacher</button>
-    <button id="removeTeacher" onclick="removeTeacherFromSection()"type="button" style="width:200px ; height:30px">Remove Teacher</button>
+    <!--<button id="removeTeacher" onclick="removeTeacherFromSection()"type="button" style="width:200px ; height:30px">Remove Teacher</button>-->
     <br><br>
 
     <input id="sectionname" placeholder="Section Name">
@@ -79,6 +81,10 @@
 
     <div id="added"></div>
 
-
+<select id="sections">
+    <option value="0">Select Section</option>
+</select>
+<button id="listButton" onclick="listSection()"type="button" style="width:200px ; height:30px">List Sections</button>
+<div id="itemslist"></div>
 </body>
 </html>

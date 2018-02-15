@@ -55,6 +55,7 @@ function listSections() {
 }
 function setUp(){
     buildSelection();
+    buildList()
 }
 function buildSelection() {
     document.getElementById("studentList").innerHTML="";
@@ -151,22 +152,39 @@ function getTeacherById(teacher){
 function removeStudentFromSection(){
     var studObject=getStudentById(document.getElementById("studentList").value);
     var sectionObject=getSectionById(document.getElementById("sectionList").value);
-    sectionObject.students.push(studObject);
 
+    for(var i = 0; i < sectionObject.students.length; i++) {
+        if(studObject.id == sectionObject.students[i].id) {
+            sectionObject.students.splice(i);
+            break;
+        }
+
+    }
+
+    document.getElementById("removeStudentsFromSection").innerHTML= studObject.firstName +" has been removed from " + sectionObject.name;
 
 }
-
-function removeTeacherFromSection(){
-    var teachObject=getTeacherById(document.getElementById("teacherList").value);
-    var sectionObject=getSectionById(document.getElementById("Listsection").value);
-    sectionObject.teacher=teachObject;
-
-}
+//
+// function removeTeacherFromSection(){
+//     var teachObject=getTeacherById(document.getElementById("teacherList").value);
+//     var sectionObject=getSectionById(document.getElementById("sectionList").value);
+//
+//     for(var i = 0; i < sectionObject.teacher.length; i++) {
+//         if(teachObject.id == sectionObject.teacher[i].id) {
+//             sectionObject.teacher.splice(i);
+//             break;
+//         }
+//
+//     }
+//     document.getElementById("removeTeachersFromSection").innerHTML= teachObject.firstName +" has been removed from " + sectionObject.name;
+//     console.log(teachObject);
+//     console.log(sectionObject)
+// }
 function addStudentToSection(){
 var studObject=getStudentById(document.getElementById("studentList").value);
 var sectionObject=getSectionById(document.getElementById("sectionList").value);
 sectionObject.students.push(studObject);
-document.getElementById("addStudentsToSectiom").innerHTML= studObject.firstName +" has been added to " + sectionObject.name;
+document.getElementById("addStudentsToSection").innerHTML= studObject.firstName +" has been added to " + sectionObject.name;
 console.log(studObject);
 
 }
@@ -176,9 +194,31 @@ function addTeacherToSection(){
     var sectionObject=getSectionById(document.getElementById("Listsection").value);
     sectionObject.teacher=teachObject;
     console.log(teachObject);
-    document.getElementById("addTeacherToSectiom").innerHTML= teachObject.firstName +" has been added to " + sectionObject.name;
+    document.getElementById("addTeacherToSection").innerHTML= teachObject.firstName +" has been added to " + sectionObject.name;
 
 }
-function search(){
+function buildList(){
+    document.getElementById("itemsList").innerHTML="";
+    var sec = "<option>Choose Section</option>";
+
+    for (var i = 0; i < allSections.length; i++) {
+        sec += "<option value='" + allSections[i].id + "'>" + allSections[i].name + "</option>"
+    }
+
+    document.getElementById("itemsList").innerHTML += sec;
 
 }
+function listSection(){
+    var html="<table border='1'>";
+    for(var i=0;i<allStudents.length;i++){
+
+        html+="<td>" + allStudents[i].firstName + "</td>";
+        html+="<td>" + allStudents[i].lastName + "</td>";
+        html+="<td>" + allStudents[i].grade + "</td>";
+        html+="</tr>";
+    }
+    html+="</table>";
+    document.getElementById("OutputList").innerHTML=html;
+
+}
+
